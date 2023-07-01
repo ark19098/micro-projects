@@ -1,0 +1,65 @@
+.sidebar {
+    flex: 1;
+    height: calc(100vh - 11rem);
+    background-color: rgb(251, 251, 255);
+    position: sticky;
+    top: 11rem;
+    overflow-y: scroll;
+    /* scrollbar-width: thin; */
+    /* scrollbar-height: 7px; */
+}
+.sidebar::-webkit-scrollbar {
+    width: 0.2rem;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #1A4E87;
+  outline: 1px solid slategrey;
+}
+
+.sidbar-wrapper {
+    padding: 2rem;
+    color: #555;
+}
+.title {
+    font-size: 1.3rem;
+    color: rgb(197, 194, 194);
+}
+.sidebar-list {
+    list-style: none;
+    padding: 0.5rem;
+}
+.sidebar-list-item {
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: inherit;
+    /* border: 1px solid #DD5353; */
+}
+.sidebar-list-item.active, .sidebar-list-item:hover {
+    background-color: #5590cf;
+    color: white;
+    /* background-color: rgb(210, 227, 247);; */
+}
+.sidebar-link {
+    background-color: white;
+    color: #555;
+}
+.sidebar-link.active {
+    background-color: #5590cf;
+    color: white;
+}
+.sidebar-list-item>span {
+    font-size: 1.6rem;
+}
+.icon {
+    margin-right: 5px;
+    font-size: 20px;
+}
